@@ -41,6 +41,16 @@ bin/zkServer.sh stop
 bin/zkServer.sh restart
 ```
 
+5. 开放端口
+
+```
+firewall-cmd --permanent --zone=public --add-port=2181/tcp
+// 重启防火墙
+systemctl restart firewalld
+// 查看开放端口
+netstat -ntl
+```
+
 ## 二、安装 Kafka
 
 1. 下载
@@ -78,6 +88,16 @@ cd /usr/local/kafka
 bin/kafka-server-start.sh -daemon config/server.properties
 // 停止
 bin/kafka-server-stop.sh
+```
+
+5. 开放端口
+
+```
+firewall-cmd --permanent --zone=public --add-port=9092/tcp
+// 重启防火墙
+systemctl restart firewalld
+// 查看开放端口
+netstat -ntl
 ```
 
 ## 三、测试
