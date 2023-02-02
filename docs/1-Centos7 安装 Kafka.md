@@ -6,7 +6,7 @@ Kafka 依赖 Zookeeper，安装 Kafka 之前，先安装 Zookeeper。
 
 1. 下载
 
-[下载地址](http://archive.apache.org/dist/zookeeper/zookeeper-3.5.3-beta/)
+    [下载地址](http://archive.apache.org/dist/zookeeper/zookeeper-3.5.3-beta/)
 
 2. 解压
 
